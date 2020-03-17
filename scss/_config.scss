@@ -30,6 +30,16 @@ $background-opacity: 0.9;
   }
 }
 
+// set textcolor function
+
+@function set-text-color($color) {
+  @if (lightness($color) > 40) {
+    @return black;
+  } @else {
+    @return white;
+  }
+}
+
 //media query mixins           HIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIER WEITERMACHEN: sesponsive portfolio website project video 4, min 21:30
 @mixin mediaSm {
   @media screen and (max-width: 500px) {
