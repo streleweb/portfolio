@@ -1,5 +1,6 @@
 @import "config";
 @import "menu";
+@import "mobile";
 
 * {
   box-sizing: border-box;
@@ -72,101 +73,5 @@ main {
     h1 {
       margin-top: 20vh; //Takes about 20 slices of the Screen (of about 100), vertically
     }
-  }
-}
-
-// Menu Overlay
-.menu {
-  position: fixed;
-  top: 0; //start at top
-  width: 100%; //fill whole screen
-  opacity: 0.9; //see through the menu, background slightly visible
-  visibility: hidden; //hide links and everything
-
-  &.show {
-    //when menuopen is false, show list again
-    visibility: visible;
-  }
-  //do following for menu-branding and menu-nav
-  &-branding,
-  &-nav {
-    display: flex; //make it a column and not inline (home, about me and so on)
-    flex-flow: column wrap;
-    align-items: center;
-    justify-content: center;
-    float: left;
-    width: 50%;
-    height: 100vh; //take up the whole Screen / all Slices
-    overflow: hidden; //dont allow scrollbars
-  }
-
-  &-nav {
-    margin: 0;
-    padding: 0;
-    background: darken($primary-color, 5);
-    list-style: none;
-    transform: translate3d(0, -100%, 0); //takes it off the page, put it up
-    @include easeOut;
-
-    &.show {
-      //slide down from top
-      transform: translate3d(0, 0, 0);
-    }
-  }
-
-  // Branding Side
-  &-branding {
-    background: $primary-color;
-    @include easeOut;
-    transform: translate3d(0, 100%, 0); //position it at the bottom
-
-    &.show {
-      //slide up from bottom
-      transform: translate3d(0, 0, 0);
-    }
-
-    .portrait {
-      width: 250px;
-      height: 250px;
-      background: url("..img/portrait.jpg");
-      border-radius: 50%;
-      border: solid 3px $secondary-color;
-    }
-  }
-  .nav-item {
-    transform: translate3d(600px, 0, 0);
-    @include easeOut;
-
-    &.show {
-      //slide in from right
-      transform: translate3d(0, 0, 0);
-    }
-
-    &.current > a {
-      color: $secondary-color;
-    }
-  }
-
-  .nav-link {
-    display: inline-block;
-    position: relative;
-    font-size: 30px;
-    text-transform: uppercase;
-    padding: 1rem 0;
-    font-weight: 300;
-    color: white;
-    text-decoration: none;
-    @include easeOut;
-
-    &:hover {
-      color: $secondary-color;
-    }
-  }
-}
-
-// add delay for each nav item (0,1 seconds)
-@for $x from 1 through 4 {
-  .nav-item:nth-child(#{$x}) {
-    transition-delay: $x * 0.1s;
   }
 }
