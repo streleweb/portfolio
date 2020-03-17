@@ -40,7 +40,7 @@ $background-opacity: 0.9;
   }
 }
 
-//media query mixins           HIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIER WEITERMACHEN: sesponsive portfolio website project video 4, min 21:30
+//media query mixins
 @mixin mediaSm {
   @media screen and (max-width: 500px) {
     @content;
