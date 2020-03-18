@@ -1,8 +1,8 @@
-$primary-color: #444;
-$secondary-color: #eece1a;
+$primary-color: rgb(36, 36, 54);
+$secondary-color: #6ab9b5e0;
 $show-home-image: true;
-$home-image: url(../img/background.jpg);
-$background-opacity: 0.9;
+$home-image: url(../img/background2.jpg);
+$background-opacity: 0.6;
 
 //Ease Out Function
 @mixin easeOut {
@@ -18,7 +18,7 @@ $background-opacity: 0.9;
       &:after {
         // Create Overlay "after" / behind the body element
         content: "";
-        position: absolute;
+        position: fixed;
         top: 0; //start Top left
         right: 0;
         width: 100%;
