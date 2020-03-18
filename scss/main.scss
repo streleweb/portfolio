@@ -1,6 +1,5 @@
 @import "config";
 @import "menu";
-@import "mobile"; //run it after main css
 
 * {
   box-sizing: border-box;
@@ -68,7 +67,7 @@ main {
   }
 
   //contact
-  .contact {
+  /*.contact {
     padding-left: 0.4rem;
     margin-top: 2rem;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -85,7 +84,7 @@ main {
     }
 
     color: set-text-color($primary-color);
-  }
+  }*/
 
   //Any main-element that has an ID of "home"
   &#home {
@@ -98,11 +97,11 @@ main {
 
 .about-info {
   display: grid;
-  grid-gap: 30px;
+  grid-gap: 10px;
   grid-template-areas:
     "bioimage bio bio"
     "job1 job2 job3";
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 
   .bio-image {
     grid-area: bioimage;
@@ -113,7 +112,7 @@ main {
 
   .bio {
     grid-area: bio;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   .job-1 {
@@ -122,10 +121,6 @@ main {
 
   .job-2 {
     grid-area: job2;
-  }
-
-  .job-3 {
-    grid-area: job3;
   }
 
   .job {
@@ -184,3 +179,5 @@ main {
   color: set-text-color($primary-color);
   height: 60px;
 }
+
+@import "mobile"; //run it after main css
