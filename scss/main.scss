@@ -137,7 +137,10 @@ main {
   grid-template-columns: repeat(3, 1fr); //3 images in 1 line
 
   img {
+    //float: left;
     width: 100%; //shrink all images inside .projects down
+    //height: 100%;
+    //object-fit: cover;
     border: 3px white solid;
 
     &:hover {
