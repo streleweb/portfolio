@@ -1,9 +1,10 @@
+
 // DOM Items
 const menuBtn = document.querySelector(".menu-btn");
 const menu = document.querySelector(".menu");
 const menuNav = document.querySelector(".menu-nav");
 const menuBranding = document.querySelector(".menu-branding");
-const biotext = document.getElementById("text-inside-bio");
+var biotext = document.getElementById("text-inside-bio");
 
 // NavItems
 const navItems = document.querySelectorAll(".nav-item");
@@ -43,12 +44,14 @@ function calculate_age(dateOfBirth) {
   return Math.abs(age_dt.getUTCFullYear() - 1970);
 }
 
+
 var alter = calculate_age(new Date(1990, 3, 26));
 
-biotext.innerHTML =
-  "Mein Name ist Peter Strele und ich bin " +
+
+
+biotext.innerHTML +=
   alter +
-  " Jahre alt. Nach 12 Jahren als hauptberuflicher Musiker, sehe ich" +
-  "meine berufliche Zukunft als Programmierer. Ich studiere zur Zeit IT mit dem Schwerpunkt Programmieren am IT-Kolleg Imst und" +
+  " Jahre alt. Nach 12 Jahren als hauptberuflicher Musiker, sehe ich " +
+  "meine berufliche Zukunft als Programmierer. Ich studiere zur Zeit IT mit dem Schwerpunkt Programmieren am IT-Kolleg Imst und " +
   "möchte mich auf Web-Developement spezialisieren. Ansonsten bewege mich gern in der freien Natur und begeistere mich für Sportarten" +
   " wie Radfahren, Joggen und Darts.";
