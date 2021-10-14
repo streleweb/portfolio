@@ -10,12 +10,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/streleweb/portfolio.git"
+    "url": "git+https://github.com/streleweb/portfoliosite.git"
   },
   "author": "Peter Strele",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/streleweb/portfolio/issues"
+    "url": "https://github.com/streleweb/portfoliosite/issues"
   },
   "dependencies": {
     "gh-pages": "^2.2.0",
