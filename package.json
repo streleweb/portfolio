@@ -1,21 +1,21 @@
 {
-  "name": "portfoliosite",
+  "name": "portfolio",
   "version": "1.0.0",
   "description": "portfolio",
   "main": "index.js",
-  "homepage": "https://streleweb.github.io/portfoliosite",
+  "homepage": "https://streleweb.github.io/portfolio",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
     "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/streleweb/portfoliosite.git"
+    "url": "git+https://github.com/streleweb/portfolio.git"
   },
   "author": "Peter Strele",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/streleweb/portfoliosite/issues"
+    "url": "https://github.com/streleweb/portfolio/issues"
   },
   "dependencies": {
     "gh-pages": "^2.2.0",
