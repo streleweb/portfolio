@@ -1,7 +1,7 @@
 {
   "name": "portfolio-site",
   "version": "1.0.0",
-  "description": "Responsive portfolio website",
+  "description": "portfolio",
   "main": "index.js",
   "homepage": "https://streleweb.github.io/portfoliosite",
   "scripts": {
