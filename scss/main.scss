@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+::selection{
+  color: blue;
+}
+
 body {
   @include background;
   background: $primary-color;
@@ -106,8 +110,14 @@ main {
   .bio-image {
     grid-area: bioimage;
     margin: auto;
-    border-radius: 50%;
-    border: $secondary-color 3px solid;
+    // border-radius: 50%;
+    margin: 0 1.5rem 1.5rem 0;
+    width: 50vw;
+    @media(max-width: 768px){
+      width: 100%;
+    }
+    margin: 0 auto;
+     border: $secondary-color 1px solid;
   }
 
   .bio {

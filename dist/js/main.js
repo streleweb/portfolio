@@ -51,7 +51,6 @@ var alter = calculate_age(new Date(1990, 3, 26));
 
 biotext.innerHTML +=
   alter +
-  " Jahre alt. Nach 12 Jahren als hauptberuflicher Musiker sehe ich " +
-  "meine berufliche Zukunft nun als Programmierer. Ich studiere zur Zeit am IT-Kolleg Imst und " +
-  "möchte mich auf die Webentwicklung spezialisieren. In meiner Freizeit bewege ich mich gern in der freien Natur und begeistere mich für Sportarten" +
-  " wie Radfahren, Joggen und Darts.";
+  " years old. After 12 years of touring through many European Countries as a musician, " +
+  "I am now directing my focus onto coding. I love being in touch with fun and kind people and I`m" +
+  " probably drinking too much coffee :) ";

@@ -1,8 +1,8 @@
-$primary-color: rgb(250, 250, 250);
+$primary-color: rgb(21, 30, 56);
 $secondary-color: #6ab9b5e0;
 $show-home-image: true;
-$home-image: url(../img/background2.jpg);
-$background-opacity: 0.6;
+$home-image: url(../img/background2.webp);
+$background-opacity: 0.2;
 
 //Ease Out Function
 @mixin easeOut {

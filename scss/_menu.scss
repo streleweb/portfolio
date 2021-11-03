@@ -45,7 +45,7 @@
   position: fixed;
   top: 0; //start at top
   width: 100%; //fill whole screen
-  opacity: 0.96; //see through the menu, background slightly visible
+  opacity: 1; 
   visibility: hidden; //hide links and everything
 
   &.show {
@@ -93,7 +93,8 @@
     .portrait {
       width: 250px;
       height: 250px;
-      background: url("../img/portrait.jpg");
+      background: url("../img/20212.webp");
+      background-size: 250px 250px;
       border-radius: 50%;
       border: solid 3px $secondary-color;
     }

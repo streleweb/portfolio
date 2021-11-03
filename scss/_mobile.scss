@@ -46,9 +46,10 @@
     transform: translate3d(100%, 0, 0); //let it come in from the right
 
     .portrait {
-      background: url("../img/portrait_small.jpg");
+      background: url("../img/20212.webp");
       width: 150px;
       height: 150px;
+      background-size: 150px 150px;
     }
   }
 
